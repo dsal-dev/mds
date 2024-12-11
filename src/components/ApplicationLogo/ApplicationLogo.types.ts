@@ -37,7 +37,8 @@ export interface ApplicationLogoProps {
     | "missioncontrol"
     | "globalconsole"
     | "minio"
-    | "enterprise";
+    | "enterprise"
+    | "biglakehouse";
   subVariant?:
     | "simple"
     | "AGPL"

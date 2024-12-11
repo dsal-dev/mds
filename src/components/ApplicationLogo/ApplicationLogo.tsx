@@ -26,6 +26,7 @@ import SUBNET from "./Logos/SUBNET/SUBNET";
 import ConsoleSingle from "./Logos/Console/ConsoleSingle";
 import SubnetOPS from "./Logos/SubnetOPS/SubnetOPS";
 import Cloud from "./Logos/Cloud/Cloud";
+import BiglakeHouse from "./Logos/BiglakeHouse/BiglakeHouse";
 import Releases from "./Logos/Releases/Releases";
 import VMBroker from "./Logos/VMBroker/VMBroker";
 import EurekaNew from "./Logos/Eureka/EurekaNew";
@@ -75,6 +76,8 @@ const ApplicationLogo: FC<ApplicationLogoProps> = ({
       return <SubnetOPS inverse={!!inverse} onClick={onClick} />;
     case "cloud":
       return <Cloud inverse={!!inverse} onClick={onClick} />;
+    case "biglakehouse":
+      return <BiglakeHouse inverse={!!inverse} onClick={onClick} />;
     case "releases":
       return <Releases inverse={!!inverse} onClick={onClick} />;
       break;
