@@ -44,6 +44,8 @@ import Enterprise from "./Logos/Enterprise/Enterprise";
 import MinIOEnterprise from "./Logos/MinIO/MinIOEnterprise";
 import MinIOEnterpriseOS from "./Logos/MinIO/MinIOEnterpriseOS";
 import MinIOEnterpriseOSVertical from "./Logos/MinIO/MinIOEnterpriseOSVertical";
+import Biglake from "./Logos/Biglake/Biglake";
+import BiglakeWhite from "./Logos/Biglake/BiglakeWhite";
 
 const ApplicationLogo: FC<ApplicationLogoProps> = ({
   applicationName,
@@ -62,6 +64,14 @@ const ApplicationLogo: FC<ApplicationLogoProps> = ({
           return <ConsoleAGPL inverse={!!inverse} onClick={onClick} />;
         default:
           return <ConsoleSingle inverse={!!inverse} onClick={onClick} />;
+      }
+      break;
+    case "biglake":
+      switch (subVariant) {
+        case "white":
+          return <BiglakeWhite inverse={!!inverse} onClick={onClick} />;
+        default:
+          return <Biglake inverse={!!inverse} onClick={onClick} />;
       }
       break;
     case "directpv":

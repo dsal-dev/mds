@@ -38,7 +38,8 @@ export interface ApplicationLogoProps {
     | "globalconsole"
     | "minio"
     | "enterprise"
-    | "biglakehouse";
+    | "biglakehouse"
+    | "biglake";
   subVariant?:
     | "simple"
     | "AGPL"
@@ -46,7 +47,8 @@ export interface ApplicationLogoProps {
     | "enterprise"
     | "new"
     | "enterpriseos"
-    | "enterpriseosvertical";
+    | "enterpriseosvertical"
+    | "white";
   inverse?: boolean;
   onClick?: React.MouseEventHandler<any> | undefined;
 }
